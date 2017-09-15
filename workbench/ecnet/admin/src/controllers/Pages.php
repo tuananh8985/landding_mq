@@ -136,7 +136,7 @@ class Pages extends BaseController {
 		->whereSubtype('post')
 		->where('featured',1)
 		->orderBy( 'created_at', 'DESC' )
-		->paginate(2);
+		->paginate(10);
 		return View::make('frontend.default.element.menu.gioithieu',compact('data'));	
 	}
 	public function bandieuhanh(){
@@ -144,7 +144,7 @@ class Pages extends BaseController {
 		->whereSubtype('post')
 		->where('featured',2)
 		->orderBy( 'created_at', 'DESC' )
-		->paginate(2);
+		->paginate(10);
 		return View::make('frontend.default.element.menu.dieuhanh',compact('data'));	
 	}
 
@@ -153,7 +153,7 @@ class Pages extends BaseController {
 		->whereSubtype('post')
 		->where('featured',3)
 		->orderBy( 'created_at', 'DESC' )
-		->paginate(2);
+		->paginate(10);
 		return View::make('frontend.default.element.menu.tintuc',compact('data'));	
 	}
 

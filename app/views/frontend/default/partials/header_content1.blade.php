@@ -62,7 +62,7 @@
 				<div class="tz-header-content tz-page-header-content">
 					<div class="container">
 						<div class="tzHeaderContainer">
-							<a class="pull-left tz_logo" href="http://wordpress.templaza.net/wp-maniva/meetup/" title="Home">
+							<a class="pull-left tz_logo" href="{{route('home')}}" title="Home">
 
 								<img class="logo_lager" src="http://wordpress.templaza.net/wp-maniva/meetup/wp-content/uploads/2016/07/logo-2.png" alt="Home">
 							</a>
@@ -73,7 +73,7 @@
 								</button>
 
 
-								<span class="tz_shop_cart_icon pull-right">
+						<!-- 		<span class="tz_shop_cart_icon pull-right">
 									<div class="tz_shop_quick_cart_view">
 
 										<div class="tz_shop_quick_cart_view">
@@ -94,19 +94,21 @@
 													<p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>
 
 
-												</div></div>        </div>
+												</div>
+											</div>  
+										</div>
 
 
-											</span>
+									</span> -->
 
 
 
-											<button class="pull-right tz-search">
+											<!-- <button class="pull-right tz-search">
 												<i class="fa fa-search"></i>
-											</button>
+											</button> -->
 
 
-											<nav class="pull-right">
+										<!-- 	<nav class="pull-right">
 
 												<ul id="tz-navbar-collapse" class="nav navbar-nav collapse navbar-collapse pull-left tz-nav themeple_megemenu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children"><a href="http://wordpress.templaza.net/wp-maniva/meetup/">Home</a><span class="icon_menu_item_mobile"></span>
 
@@ -156,12 +158,12 @@
 												</li>
 												<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://wordpress.templaza.net/wp-maniva/meetup/typography/">Typography</a></li>
 											</ul>
-										</nav>
+										</nav> -->
 									</div>
 
 
 									<!-- Form search start -->
-									<div class="tz-form-search">
+								<!-- 	<div class="tz-form-search">
 										<div class="container">
 											<form method="get" class="searchform" action="http://wordpress.templaza.net/wp-maniva/meetup/">
 												<label class="icon-search tziconsearch">&nbsp;</label>
@@ -172,7 +174,7 @@
 												<i class="fa fa-times tz-form-close"></i>
 											</form>
 										</div>
-									</div>
+									</div> -->
 									<!-- Form search end -->
 
 
@@ -183,4 +185,3 @@
 					</div><!--end class container-->
 				</header>
 
-		

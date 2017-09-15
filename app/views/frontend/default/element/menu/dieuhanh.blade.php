@@ -38,13 +38,13 @@
 						@foreach($data as $item)
 						<div class="tz-blogBox ">
 							<div class="tz-BlogImage">
-								<img width="1193" height="671" src="http://wordpress.templaza.net/wp-maniva/meetup/wp-content/uploads/2015/10/blog-quote.jpg" class="attachment-full size-full wp-post-image" alt="" srcset="http://wordpress.templaza.net/wp-maniva/meetup/wp-content/uploads/2015/10/blog-quote.jpg 1193w, http://wordpress.templaza.net/wp-maniva/meetup/wp-content/uploads/2015/10/blog-quote-300x169.jpg 300w, http://wordpress.templaza.net/wp-maniva/meetup/wp-content/uploads/2015/10/blog-quote-1024x576.jpg 1024w" sizes="(max-width: 1193px) 100vw, 1193px">
+								<img width="1193" height="671" src="{{asset($item->image)}}" class="attachment-full size-full wp-post-image" alt="" srcset="{{asset($item->image)}}" sizes="(max-width: 1193px) 100vw, 1193px">
 								<div class="tz-ImageOverlay"></div>
 							</div>
 							<div class="tz_blog_box_content">
 								<h4 class="title">
 									<a href="{{$item->link()}}">
-										{{$item->title}}                      
+										{{$item->SoftTrim($item->title,100)}}                   
 									</a>
 								</h4>
 								<span class="tzinfomation">
@@ -52,14 +52,6 @@
 
 										{{$item->created_at}} 
 									</small>
-
-
-
-
-									<span class="tzcategory">
-										<i>|</i>
-										<a href="http://wordpress.templaza.net/wp-maniva/meetup/category/blog/" rel="category tag">Giới Thiệu</a>     
-									</span>
 								</span>
 
 								<p>{{$item->SoftTrim($item->description,200)}}</p>

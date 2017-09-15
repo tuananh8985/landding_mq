@@ -1,40 +1,24 @@
 <header class="tz-headerHome tz-homeType1 tz-homeType3  tz-homeTypeFixed" data-option="3">
 
   <div id="Tz-provokeMe">
-
-
     <div class="tz_meetup_header_option">
       <div class="container">
         <div class="row">
-
-
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="tz_meetup_header_option_phone">
-
-
-
               <span>
                 <img src="../wp-content/themes/maniva-meetup/images/phone.png" alt="phone">
 
                 +44 40 8873432
               </span>
-
-
-
               <span>
                 <img src="../wp-content/themes/maniva-meetup/images/email_meetup.png" alt="email">
                 <a href="mailto:info@maniva.com">
 
                   info@maniva.com                                                        </a>
                 </span>
-
-
-
               </div>
             </div>
-
-
-
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <div class="tz-headerRight">
 
@@ -56,11 +40,7 @@
                   <li>
                     <a target="_blank" href="http://www.youtube.com/channel/UCykS6SX6L2GOI-n3IOPfTVQ"><i class="fa fa-youtube"></i></a>
                   </li>
-                  <li class="tz_btn_search_header">
-                    <span class="tz-search-header3">
-                      <i class="fa fa-search"></i>
-                    </span>
-                  </li>
+              
                 </ul>
               </div>
             </div>
@@ -80,8 +60,8 @@
       <div class="tz-header-content" >
         <div class="container">
           <div class="tzHeaderContainer">
-            <a class="pull-left tz_logo" href="http://wordpress.templaza.net/wp-maniva/meetup" title="Home">
-              <img class="logo_lager" src="../wp-content/uploads/2015/09/logo-meetup1.png" alt="Home" />
+            <a class="pull-left tz_logo" href="{{route('home')}}" title="Home">
+              <img class="logo_lager" src="{{asset('landing_meetup/wp-content/uploads/2015/09/logo-meetup1.png')}}" alt="Home" />
             </a>
             <div class="tzHeaderMenu_nav">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tz-navbar-collapse">
@@ -89,16 +69,16 @@
               </button>
               <nav class="pull-right tz_speed_one_page" data-speed-one-page="2200">
 
-                <ul id="tz-navbar-collapse" class="nav navbar-nav collapse navbar-collapse pull-left tz-nav tz_nav_one_page themeple_megemenu"><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#home">Home</a></li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#about">About</a></li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#wedo">What We Do</a></li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#agenda">Agenda</a></li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#gallery">Gallery</a></li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#speaker">Speakers</a></li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#faq">Faq</a></li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#register">Register</a></li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#blog">Blog</a></li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#Contact">Contact</a></li>
+                <ul id="tz-navbar-collapse" class="nav navbar-nav collapse navbar-collapse pull-left tz-nav tz_nav_one_page themeple_megemenu"><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#home">Trang Chủ</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#about">Giới Thiệu</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#manager">Ban Điều Hành</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#gallery">Thư Viện Ảnh</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#blog">Tin Tức</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#speaker">Nhà Tài Trợ</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#register">Đăng ký</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#Contact">Liên Hệ</a></li>
+      <!--             <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#faq">Faq</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#blog">Blog</a></li> -->
                 </ul>
               </nav>
             </div>

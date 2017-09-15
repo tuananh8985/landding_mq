@@ -38,54 +38,46 @@
                         @foreach($data as $item)
                         <div class="tz-blogBox ">
                             <div class="tz-BlogImage">
-                                <img width="1193" height="671" src="http://wordpress.templaza.net/wp-maniva/meetup/wp-content/uploads/2015/10/blog-quote.jpg" class="attachment-full size-full wp-post-image" alt="" srcset="http://wordpress.templaza.net/wp-maniva/meetup/wp-content/uploads/2015/10/blog-quote.jpg 1193w, http://wordpress.templaza.net/wp-maniva/meetup/wp-content/uploads/2015/10/blog-quote-300x169.jpg 300w, http://wordpress.templaza.net/wp-maniva/meetup/wp-content/uploads/2015/10/blog-quote-1024x576.jpg 1024w" sizes="(max-width: 1193px) 100vw, 1193px">
-                                <div class="tz-ImageOverlay"></div>
-                            </div>
-                            <div class="tz_blog_box_content">
-                                <h4 class="title">
-                                    <a href="{{$item->link()}}">
-                                        {{$item->title}}                      
-                                    </a>
-                                </h4>
-                                <span class="tzinfomation">
-                                    <small class="tzinfomation_time">
-
-                                        {{$item->created_at}} 
-                                    </small>
-
-
-
-
-                                    <span class="tzcategory">
-                                        <i>|</i>
-                                        <a href="http://wordpress.templaza.net/wp-maniva/meetup/category/blog/" rel="category tag">Giới Thiệu</a>     
-                                    </span>
-                                </span>
-
-                                <p>{{$item->SoftTrim($item->description,200)}}</p>
-
-                                <a href="{{$item->link()}}" class="tzreadmore">
-                                    <span>
-                                        Chi Tiết<i class="fa fa-long-arrow-right"></i>
-                                    </span>
+                               <img width="1193" height="671" src="{{asset($item->image)}}" class="attachment-full size-full wp-post-image" alt="" srcset="{{asset($item->image)}}" sizes="(max-width: 1193px) 100vw, 1193px">
+                               <div class="tz-ImageOverlay"></div>
+                           </div>
+                           <div class="tz_blog_box_content">
+                            <h4 class="title">
+                                <a href="{{$item->link()}}">
+                                    {{$item->SoftTrim($item->title,100)}}                    
                                 </a>
+                            </h4>
+                            <span class="tzinfomation">
+                                <small class="tzinfomation_time">
 
-                            </div>
+                                    {{$item->created_at}} 
+                                </small>
+                            </span>
 
+                            <p>{{$item->SoftTrim($item->description,200)}}</p>
+
+                            <a href="{{$item->link()}}" class="tzreadmore">
+                                <span>
+                                    Chi Tiết<i class="fa fa-long-arrow-right"></i>
+                                </span>
+                            </a>
 
                         </div>
-                        @endforeach
-                        <!-- End begin -->
+
+
                     </div>
+                    @endforeach
+                    <!-- End begin -->
                 </div>
-
             </div>
-        </div>
-        <!-- aaaaâ -->
 
-        <div class="col-md-8 col-md-offset-2">
-            {{$data->links()}}
         </div>
     </div>
+    <!-- aaaaâ -->
+
+    <div class="col-md-8 col-md-offset-2">
+        {{$data->links()}}
+    </div>
+</div>
 </section>
 @stop

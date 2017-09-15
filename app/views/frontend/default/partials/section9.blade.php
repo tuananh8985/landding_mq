@@ -4,10 +4,10 @@
                 <div class="wpb_wrapper">
                     <div class="tz_meetup_btn text-center  " >
                         <h4 class="tz_meetup_title_btn" >
-                            MDA’s Quickest Way To Make You More Successful!        
+                            Hãy Đồng Hành Cùng Chúng Tôi        
                         </h4>
                         <a class="tz_meetup_btn_white"   >
-                            LEARN MORE
+                            Chi Tiết
                         </a>
                     </div>
                 </div>
